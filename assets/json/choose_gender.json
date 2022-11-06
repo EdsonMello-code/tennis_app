@@ -1,0 +1,15 @@
+[
+    {
+        "title": "Women's Club",
+        "levels": "high",
+        "image": "assets/images/women.png",
+        "events_quantity": 2
+    },
+
+    {
+        "title": "Man's Club",
+        "levels": "All levels",
+        "image": "assets/images/man.png",
+        "events_quantity": 2
+    }
+]
