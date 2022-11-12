@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:tennis_app/app/modules/choose_level/constants/choose_level_dimensions.dart';
 import 'package:tennis_app/app/modules/choose_level/widgets/custom_choose_level_page_view_tile_widget.dart';
 
 class CustomChooseLevelPageViewWidget extends StatefulWidget {
@@ -18,7 +19,7 @@ class CustomChooseLevelPageViewWidget extends StatefulWidget {
 
 class _CustomChooseLevelPageViewWidgetState
     extends State<CustomChooseLevelPageViewWidget> {
-  double _currentPage = 0.0;
+  double _currentPage = ChooseLevelDimensions.chooseLevelZero;
 
   @override
   void initState() {
@@ -26,7 +27,8 @@ class _CustomChooseLevelPageViewWidgetState
 
     widget.pageViewController.addListener(() {
       setState(() {
-        _currentPage = widget.pageViewController.page ?? 0.0;
+        _currentPage = widget.pageViewController.page ??
+            ChooseLevelDimensions.chooseLevelZero;
       });
     });
   }
@@ -35,7 +37,7 @@ class _CustomChooseLevelPageViewWidgetState
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 406,
+      height: ChooseLevelDimensions.chooseLevelHeightOfPageView,
       child: PageView.builder(
         scrollDirection: Axis.horizontal,
         itemCount: pages.length,

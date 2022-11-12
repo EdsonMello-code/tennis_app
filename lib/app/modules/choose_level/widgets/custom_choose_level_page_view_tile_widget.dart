@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tennis_app/app/modules/choose_level/constants/choose_level_dimensions.dart';
 
 class CustomChooseLevelPageViewTileWidget extends StatelessWidget {
   final Color backgroundColor;
@@ -10,11 +11,13 @@ class CustomChooseLevelPageViewTileWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 24.0),
+      padding: const EdgeInsets.only(
+        top: ChooseLevelDimensions.customChooseLevelPageViewTilePadding,
+      ),
       child: Container(
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(
-            16.0,
+            ChooseLevelDimensions.customChooseLevelPageViewBorderRadius,
           ),
           color: backgroundColor,
         ),

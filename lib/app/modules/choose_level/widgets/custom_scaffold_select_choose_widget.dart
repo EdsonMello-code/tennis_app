@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tennis_app/app/modules/choose_level/constants/choose_level_dimensions.dart';
 
 import '../../../core/painters/choose_level_bottom_left_painter.dart';
 import '../../../core/painters/choose_level_top_left_painter.dart';
@@ -25,18 +26,20 @@ class CustomScaffoldSelectChooseWidget extends StatelessWidget {
           children: [
             child,
             Positioned(
-              top: 0,
-              left: 0,
+              top: ChooseLevelDimensions.chooseLevelZero,
+              left: ChooseLevelDimensions.chooseLevelZero,
               child: CustomPaint(
-                size: const Size(143, 146),
+                size: ChooseLevelDimensions
+                    .customScaffoldSelectChooseSizeOfPainters,
                 painter: ChooseLevelTopLeftPainter(),
               ),
             ),
             Positioned(
-              bottom: 0,
-              left: 0,
+              bottom: ChooseLevelDimensions.chooseLevelZero,
+              left: ChooseLevelDimensions.chooseLevelZero,
               child: CustomPaint(
-                size: const Size(143, 146),
+                size: ChooseLevelDimensions
+                    .customScaffoldSelectChooseSizeOfPainters,
                 painter: ChooseLevelBottomLeftPainter(),
               ),
             ),

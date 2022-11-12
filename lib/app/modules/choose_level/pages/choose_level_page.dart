@@ -22,7 +22,9 @@ class _ChooseLevelPageState extends State<ChooseLevelPage> {
   @override
   void initState() {
     super.initState();
-    pageViewController = PageController(viewportFraction: 0.70);
+    pageViewController = PageController(
+      viewportFraction: ChooseLevelDimensions.pageViewVewportFraction,
+    );
   }
 
   @override
@@ -57,7 +59,8 @@ class _ChooseLevelPageState extends State<ChooseLevelPage> {
                     ),
                     Padding(
                       padding: const EdgeInsets.only(
-                        top: ChooseLevelDimensions.defaultPaddingEight * 3,
+                        top: ChooseLevelDimensions.defaultPaddingEight *
+                            ChooseLevelDimensions.chooseLevelQuantityPadding,
                       ),
                       child: Text(
                         ChooseLevelText.instance.SkipTitle,
