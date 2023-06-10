@@ -1,16 +1,28 @@
-# tennis_app
+# :pencil2: Tenis App
 
-A new Flutter project.
+Este aplicativo visa aprimorar meu treinamento em design de layout no framework Flutter. Com recursos específicos para Flutter, ele oferece um ambiente prático para desenvolver habilidades na criação de layouts intuitivos e atraentes. Nele, posso explorar diversas técnicas de design de interface, utilizando os componentes e recursos disponíveis no Flutter.
 
-## Getting Started
+## :heavy_check_mark: Telas do projeto
 
-This project is a starting point for a Flutter application.
+<div style="display: flex; flex-direction: row; justify-content: space-evenly;  padding-top: 24px;  padding-bottom: 24px;">
 
-A few resources to get you started if this is your first Flutter project:
+![Primeira tela](screenshot1.png)
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+![Segunda tela](screenshot2.png)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+</div>
+
+## :computer: Tecnologias, APIs, Packages utilizados:
+  
+  * Flutter / Dart
+  * VSCode IDE
+  * Navigator(Nativo)
+  * Google Fonts
+
+## :file_folder: Organização de pastas e arquivos do projeto:
+
+![Estrutura de pasta](./screenshot3.png)
+
+# :iphone: Testes em Plataformas Android e IOS
+
+  - Sim.
