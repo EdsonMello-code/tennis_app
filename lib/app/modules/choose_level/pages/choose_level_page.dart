@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:tennis_app/app/core/constants/app_routes.dart';
-import 'package:tennis_app/app/core/theme/app_theme_text.dart';
+import 'package:tennis_app/app/core/widgets/text_widget.dart';
 import 'package:tennis_app/app/modules/choose_level/constants/choose_level_dimensions.dart';
 import 'package:tennis_app/app/modules/choose_level/constants/choose_level_text.dart';
 import 'package:tennis_app/app/modules/choose_level/widgets/custom_choose_level_page_view_widget.dart';
@@ -62,9 +62,8 @@ class _ChooseLevelPageState extends State<ChooseLevelPage> {
                         top: ChooseLevelDimensions.defaultPaddingEight *
                             ChooseLevelDimensions.chooseLevelQuantityPadding,
                       ),
-                      child: Text(
+                      child: TextWidget.bodyTwo(
                         ChooseLevelText.instance.SkipTitle,
-                        style: AppTextTheme.body2,
                       ),
                     )
                   ],

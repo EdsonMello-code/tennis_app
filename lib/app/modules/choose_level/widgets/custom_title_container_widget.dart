@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:tennis_app/app/core/widgets/text_widget.dart';
 
 import '../../../core/theme/app_theme_colors.dart';
 import '../../../core/theme/app_theme_icons.dart';
-import '../../../core/theme/app_theme_text.dart';
 import '../constants/choose_level_dimensions.dart';
 import '../constants/choose_level_text.dart';
 
@@ -23,9 +23,8 @@ class CustomTitleContainerWidget extends StatelessWidget {
             size: ChooseLevelDimensions.sizeTouchIcon,
           ),
         ),
-        Text(
+        TextWidget.bodyTwo(
           ChooseLevelText.instance.title,
-          style: AppTextTheme.body2,
         ),
       ],
     );
